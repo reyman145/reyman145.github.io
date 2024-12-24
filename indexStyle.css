@@ -1,0 +1,75 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "input input input"
+      "input input input"
+      "countdown1 countdown1 countdown1"
+      "carousel carousel carousel";
+  }
+  .input { grid-area: input;
+align-content: center;
+margin-left:auto; margin-right:auto;
+     }
+
+  .countdown1 { grid-area: countdown1; 
+align-content: center;
+margin-left:auto; margin-right:auto;
+   
+
+}
+.carousel { grid-area: carousel; 
+    align-content: center;
+    margin-left:auto; margin-right:auto;
+       
+    
+    }
+
+h2 {
+    font-size: 24px;
+    color: rgba(177, 69, 69, 0.945);
+}
+
+input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin: 10px 0;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#message {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#countdown {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff4500;
+    margin-top: 20px;
+}
+  
+  
+body{
+    background-color: #121212;
+    color: white;
+}
